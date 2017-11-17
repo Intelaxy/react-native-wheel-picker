@@ -45,18 +45,7 @@ export default class DatePicker extends Component {
       return { value: n + 1, label: `${n + 1}${this.props.labelUnit.month}` }
     })
   }
-  static propTypes = {
-    labelUnit: React.PropTypes.shape({
-      year: React.PropTypes.string,
-      month: React.PropTypes.string,
-      day: React.PropTypes.string
-    }),
-    date: React.PropTypes.instanceOf(Date).isRequired,
-    maximumDate: React.PropTypes.instanceOf(Date),
-    minimumDate: React.PropTypes.instanceOf(Date),
-    mode: React.PropTypes.oneOf(['date', 'time', 'datetime']),
-    onDateChange: React.PropTypes.func
-  }
+
   static defaultProps = {
     labelUnit: { year: '年', month: '月', day: '日' },
     mode: 'date',

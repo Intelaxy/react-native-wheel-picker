@@ -25,12 +25,6 @@ export default class Picker extends Component {
     };
   }
 
-  static propTypes = {
-    onValueChange: React.PropTypes.func,
-    pickerData: React.PropTypes.array,
-    selectedValue: React.PropTypes.any
-  }
-
   static defaultProps = {
     pickerData: []
   }

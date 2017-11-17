@@ -9,13 +9,7 @@ export default class DatePicker extends Component {
     super(props)
     this.state = { date: this.props.date }
   }
-  static propTypes = {
-    date: React.PropTypes.instanceOf(Date).isRequired,
-    maximumDate: React.PropTypes.instanceOf(Date),
-    minimumDate: React.PropTypes.instanceOf(Date),
-    mode: React.PropTypes.oneOf(['date', 'time', 'datetime']),
-    onDateChange: React.PropTypes.func
-  }
+
   static defaultProps = {
     mode: 'date',
     date: new Date()

@@ -12,26 +12,6 @@ import _ from 'lodash';
 const defaultItemStyle = { color: 'white', fontSize: 26 };
 const WheelCurvedPicker = React.createClass ({
 
-	propTypes: {
-		...View.propTypes,
-
-		data: React.PropTypes.array,
-
-		textColor: ColorPropType,
-
-		textSize: React.PropTypes.number,
-
-		itemStyle: React.PropTypes.object,
-
-		itemSpace: React.PropTypes.number,
-
-		onValueChange: React.PropTypes.func,
-
-		selectedValue: React.PropTypes.any,
-
-		selectedIndex: React.PropTypes.number,
-	},
-
 	getDefaultProps(): Object {
 		return {
 			itemSpace: 20
